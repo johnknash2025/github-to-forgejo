@@ -1,5 +1,7 @@
 # github-to-forgejo
 
+[日本語](README.ja.md) · For AI coding agents: [AGENTS.md](AGENTS.md)
+
 Move **every** repository of a GitHub user or org to [Forgejo](https://forgejo.org) in one run — with issues,
 pull requests, labels, milestones, releases and wikis — sorted into Forgejo organizations, with the default branch
 of each one protected.
@@ -73,7 +75,7 @@ also the record of where everything went.
 
 The map is plain text, so you can hand the `plan` output to a local AI agent you trust, together with what it
 knows about your projects, and ask it to propose the orgs. Your project details never have to leave your machine,
-and this tool needs none of them: it only reads the finished map.
+and this tool needs none of them: it only reads the finished map. The steps for the agent are in [AGENTS.md](AGENTS.md).
 
 ## Commands
 
@@ -114,12 +116,3 @@ The tests run against an in-memory GitHub and Forgejo, and also check that no to
 ## License
 
 MIT. Maintenance is minimal: issues are read, fixes are not promised.
-
----
-
-### 日本語
-
-GitHub のユーザーまたは組織の全リポジトリを、Issue・PR・ラベル・マイルストーン・リリース・Wiki ごと Forgejo
-へ一度に移し、組織に振り分け、既定ブランチを保護します。実測で 132 リポジトリを 26 分。Python 1 ファイル、
-標準ライブラリだけ。振り分けの表（map.toml）は `plan` で下書きを作り、自分で、または手元のエージェントに
-自分のプロジェクトの事情を渡して決めさせられます。このツールは出来上がった表しか読みません。
